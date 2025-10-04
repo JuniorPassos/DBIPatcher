@@ -65,7 +65,7 @@ jobs:
           export TAG FALLBACK
 
           perl -0777 -i -pe '
-            my $pat      = qr/\{\}-\{\} FW:\{\}\{\}/;
+            my $pat      = qr/\{\}-\{\} FW:\{\}\{\} SDK:\{\}/;
             my $tag      = $ENV{TAG};
             my $fallback = $ENV{FALLBACK} // 0;
 
